@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mlyarmdhn</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to Font Awesome untuk ikon tambahan -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Google Font (Poppins) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/asset/css/style.css" />
+    
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light playful-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand playful-brand" href="#" id="portfolio-title"
+          >Portfolio</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link playful-link"
+                aria-current="page"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link playful-link" href="#certificates"
+                >Certificates</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link playful-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link playful-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link playful-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="d-flex align-items-center justify-content-center text-center mb-5"
+    >
+      <div class="hero-overlay">
+        <h1 class="hero-heading">Hello, I'm <span>M Mulya Ramadhan</span></h1>
+        <p class="hero-subheading">Duke dari kerajaan sriwijaya</p>
+        <a href="#projects" class="btn btn-primary mt-3 hero-button"
+          >Next</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center">
+      <img
+        src="https://via.placeholder.com/200"
+        alt="Profile Image"
+        class="profile-image rounded-circle img-fluid animated-image"
+      />
+      <div class="cv-download mt-3">
+        <a href="path/to/your/cv.pdf" class="cv-icon" download title="Download CV">
+          <i class="fas fa-file-download"></i>
+        </a>
+        <span class="cv-text">Download CV</span>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h2 class="playful-header">M Mulya Ramadhan</h2>
+      <p class="playful-text">
+        Sebagai Duke dari Kerajaan Sriwijaya, saya adalah pemimpin bijaksana yang membawa kejayaan dan kemakmuran bagi wilayah ini. Di bawah kepemimpinan saya, Kerajaan Sriwijaya berkembang menjadi pusat perdagangan maritim yang disegani, dengan jaringan diplomasi yang kuat dan pengaruh budaya yang meluas. Keberanian saya dalam menghadapi tantangan, kecerdikan dalam mengambil keputusan, serta komitmen untuk menjaga kesejahteraan rakyat, menjadikan saya sosok yang dihormati dan dipuja. Warisan saya akan selalu dikenang sebagai tonggak kejayaan yang menempatkan Sriwijaya di puncak kekuatan Nusantara.
+      </p>
+      <a href="#contact" class="btn btn-primary">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <!-- Certificates Section (Carousel) -->
+    <section id="certificates" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Certificates</h2>
+        <div
+          id="certificateCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://via.placeholder.com/600x300?text=Certificate+1"
+                      class="card-img-top zoomable"
+                      data-bs-toggle="modal"
+                      data-bs-target="#certificateModal1"
+                      alt="Certificate 1"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Certificate 1</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://via.placeholder.com/600x300?text=Certificate+2"
+                      class="card-img-top zoomable"
+                      data-bs-toggle="modal"
+                      data-bs-target="#certificateModal2"
+                      alt="Certificate 2"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Certificate 2</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://via.placeholder.com/600x300?text=Certificate+3"
+                      class="card-img-top zoomable"
+                      data-bs-toggle="modal"
+                      data-bs-target="#certificateModal3"
+                      alt="Certificate 3"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Certificate 3</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="card shadow-sm">
+                    <img
+                      src="https://via.placeholder.com/600x300?text=Certificate+4"
+                      class="card-img-top zoomable"
+                      data-bs-toggle="modal"
+                      data-bs-target="#certificateModal4"
+                      alt="Certificate 4"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Certificate 4</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#certificateCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#certificateCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Modal for Zoom -->
+        <div
+          class="modal fade"
+          id="certificateModal1"
+          tabindex="-1"
+          aria-labelledby="certificateModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <img
+                  src="https://via.placeholder.com/600x300?text=Certificate+1"
+                  class="img-fluid"
+                  alt="Certificate 1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="certificateModal2"
+          tabindex="-1"
+          aria-labelledby="certificateModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <img
+                  src="https://via.placeholder.com/600x300?text=Certificate+2"
+                  class="img-fluid"
+                  alt="Certificate 2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="certificateModal3"
+          tabindex="-1"
+          aria-labelledby="certificateModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <img
+                  src="https://via.placeholder.com/600x300?text=Certificate+3"
+                  class="img-fluid"
+                  alt="Certificate 3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="certificateModal4"
+          tabindex="-1"
+          aria-labelledby="certificateModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <img
+                  src="https://via.placeholder.com/600x300?text=Certificate+4"
+                  class="img-fluid"
+                  alt="Certificate 4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://via.placeholder.com/300"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">A brief description of this project.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://via.placeholder.com/300"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">A brief description of this project.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://via.placeholder.com/300"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">A brief description of this project.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Bang makanannya apa?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                nasi
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Bang ras keturunan apa?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Pribumi bangsawan
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Bang punya hobi lain ga?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Jalan-jalan pake google maps
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Contact Me</h2>
+        <p>M Mulya Ramadhan</p>
+        <div class="social-icons">
+          <a href="https://github.com/Myuzee" class="mx-2" target="_blank">
+            <i class="fab fa-github" style="font-size: 2rem"></i>
+          </a>
+          <a
+            href="https://open.spotify.com/playlist/26Ld4gbFYEB9KmPZT6G7fK?si=OivD2y93SdeYuIOi8jvZHg"
+            class="mx-2"
+            target="_blank"
+          >
+            <i class="fab fa-spotify" style="font-size: 2rem"></i>
+          </a>
+          <a
+            href="https://instagram.com/Mlyarmdhn"
+            class="mx-2"
+            target="_blank"
+          >
+            <i class="fab fa-instagram" style="font-size: 2rem"></i>
+          </a>
+          <a href="https://t.me/6281384824266" class="mx-2" target="_blank">
+            <i class="fab fa-telegram" style="font-size: 2rem"></i>
+          </a>
+          <a href="mailto:mlyarmdhn@gmail.com" class="mx-2">
+            <i class="fas fa-envelope" style="font-size: 2rem"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+      <p>&copy; Atas nama kerajaan sriwijaya, website ini dibentuk</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const title = document.getElementById("portfolio-title");
+      const originalText = title.innerText;
+      title.innerHTML = originalText
+        .split("")
+        .map((letter) => `<span class="letter">${letter}</span>`)
+        .join("");
+
+      const letters = document.querySelectorAll(".letter");
+
+      function animateLetters() {
+        letters.forEach((letter, index) => {
+          setTimeout(() => {
+            letter.style.opacity = 1; // Menampilkan huruf
+            // Mengubah warna huruf dengan kombinasi dua warna
+            letter.style.color = index % 2 === 0 ? "#3498db" : "#ff6f61"; // Biru untuk indeks genap, kuning untuk indeks ganjil
+          }, index * 200); // Delay berdasarkan indeks huruf
+        });
+      }
+
+      animateLetters();
+
+      // Ulangi animasi setiap beberapa detik
+      setInterval(() => {
+        letters.forEach((letter, index) => {
+          setTimeout(() => {
+            letter.style.opacity = 0; // Menyembunyikan huruf
+          }, index * 200); // Delay berdasarkan indeks huruf
+        });
+
+        setTimeout(() => {
+          animateLetters(); // Mulai animasi lagi setelah semua huruf tersembunyi
+        }, originalText.length * 200 + 500); // Delay sebelum animasi berikutnya
+      }, originalText.length * 200 + 2000); // Interval antara pengulangan
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
