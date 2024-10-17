@@ -196,102 +196,122 @@ a {
 
 /* About Section */
 #about {
-    background-color: #e0f7fa; /* Light blue background */
-    padding: 50px 0;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #e0f7fa; /* Light blue background */
+  padding: 50px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff6f61; /* Playful, bright color */
+  font-family: "Poppins", sans-serif; /* Playful font */
+  text-shadow: 2px 2px #ffb6c1; /* Light shadow for playful effect */
+  animation: slideIn 1s ease-out; /* Animation for heading */
+}
+
+.cv-download {
+  display: flex;
+  align-items: center; /* Vertically center the text with the icon */
+  justify-content: center; /* Center the content */
+}
+
+.cv-icon {
+  font-size: 1.5rem; /* Size of the icon */
+  color: #ff6f61; /* Icon color */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.cv-text {
+  font-size: 1.2rem; /* Font size for the text */
+  font-family: "Poppins", sans-serif; /* Same playful font */
+  color: #555; /* Text color */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
   }
-  
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #555;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid #ff6f61;
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.1); /* Light zoom-in effect on hover */
+}
+
+.animated-image {
+  animation: float 4s ease-in-out infinite;
+}
+
+.btn-primary {
+  background-color: #ff6f61; /* Same playful color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff3b3b; /* Darker shade on hover */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  #about {
+    padding: 30px 10px; /* Reduce padding for smaller screens */
+    text-align: center; /* Center text for small screens */
+  }
+
   #about h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #ff6f61; /* Playful, bright color */
-    font-family: "Poppins", sans-serif; /* Playful font */
-    text-shadow: 2px 2px #ffb6c1; /* Light shadow for playful effect */
-    animation: slideIn 1s ease-out; /* Animation for heading */
+    font-size: 2rem; /* Adjust heading size */
+  }
+
+  #about p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  .profile-image {
+    width: 150px; /* Reduce profile image size */
+    height: 150px;
+    margin: 0 auto 20px auto; /* Center image and add margin */
   }
 
   .cv-download {
-    display: flex;
-    align-items: center; /* Vertically center the text with the icon */
-    justify-content: center; /* Center the content */
+    flex-direction: column; /* Stack icon and text vertically */
+    margin-bottom: 20px;
   }
-  
+
   .cv-icon {
-    font-size: 1.5rem; /* Size of the icon */
-    color: #ff6f61; /* Icon color */
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: 0; /* Remove horizontal space */
+    margin-bottom: 10px; /* Add vertical space between icon and text */
   }
-  
-  .cv-text {
-    font-size: 1.2rem; /* Font size for the text */
-    font-family: "Poppins", sans-serif; /* Same playful font */
-    color: #555; /* Text color */
-  }
-  
-  
-  @keyframes slideIn {
-    from {
-      transform: translateX(-50%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  #about p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #555;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .profile-image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 5px solid #ff6f61;
-    transition: transform 0.3s ease;
-  }
-  
-  .profile-image:hover {
-    transform: scale(1.1); /* Light zoom-in effect on hover */
-  }
-  
-  .animated-image {
-    animation: float 4s ease-in-out infinite;
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .social-icon {
-    font-size: 1.5rem;
-    color: #ff6f61;
-    transition: transform 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.2); /* Slightly enlarge icon on hover */
-  }
-  
+
   .btn-primary {
-    background-color: #ff6f61; /* Same playful color */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+    width: 100%; /* Make button take full width on mobile */
+    font-size: 1rem;
   }
-  
-  .btn-primary:hover {
-    background-color: #ff3b3b; /* Darker shade on hover */
-  }
+}
 
 
       /* Zoom Effect */
